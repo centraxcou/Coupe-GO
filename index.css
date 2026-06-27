@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* En pantallas de celular real, la app ocupa toda la pantalla sin el marco
+   decorativo de "teléfono dentro de la pantalla" (ese marco solo tiene
+   sentido para verla en una computadora de escritorio). */
+@media (max-width: 480px) {
+  .coupe-app {
+    padding: 0 !important;
+    background: #fafafa !important;
+    display: block !important;
+    min-height: 100vh !important;
+  }
+
+  .coupe-phone-frame {
+    width: 100% !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
